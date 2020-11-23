@@ -1,0 +1,163 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// basic
+
+body {
+  padding-top: 100px;
+  margin: 0;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+// .center h1 {
+//   margin-bottom: 10px;
+// }
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  text-align: center;
+}
+
+// header
+
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 0;
+}
+
+header {
+  padding: 20px 16px;
+  vertical-align: center;
+  margin: 0px;
+}
+
+header.navbar{
+  margin: 0;
+}
+
+#log {
+  float: left;
+  font-family: fantasy;
+  font-size: 30px;
+  margin-left: 200px;
+  color: white;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+// #log:hover{
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// nav.navbar{
+//   margin: 0;
+// }
+
+li {
+  font-size: 1.5em;
+  color: white;
+}
+
+// home background
+
+.main-container {
+  margin: 0;
+  padding: 150px;
+  background-image: image-url('home_1.png');
+  height:  722px;
+  width:   1440px;
+  background-size:cover;
+}
+  
+
+
+
+.btn {
+  // text-align: center;
+  text-decoration: none;
+  background-color: #286090;
+  color: white;
+  display: block;
+  width: 150px;
+  height: 70px;
+  margin: 80px auto 48px;
+  line-height: 44px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+
+
+// .center {
+//   text-align: center;
+// }
+
+
+// .btn btn-lg btn-primary{
+//   text-align: center;
+// }
+
+
+
+
+
+// footer
+
+.footer {
+  // margin-top: 40px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+div.footer  {
+  display: block;
+}
+
+
+// .footer p {
+//   display: block;
+//   margin: auto ;
+// }
+
+

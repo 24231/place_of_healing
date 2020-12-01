@@ -1,0 +1,25 @@
+<% provide(:title, 'Log in') %>
+
+<div class="new">
+  
+  <div class="post_top">
+    <h1>Log in</h1>
+  </div>
+
+  <div class="form_containar">
+      <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+ 
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+
+        <%= f.submit "Log in", class: "btn btn-primary" %>
+        
+      <% end %>
+  </div>
+  
+  <div class="return-top">
+    <%= link_to "トップ画面に戻る", root_url %>
+  </div>
+</div>

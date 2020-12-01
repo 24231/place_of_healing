@@ -9,5 +9,9 @@ Rails.application.routes.draw do
  get 'signup',         to:'users#new'
  post 'users/create',  to:'users#create'
  
-  
+ get  'posts/new',         to:'posts#new'
+ get  'posts/:id/show',    to:'posts#show'
+ post 'posts/create',      to:'posts#create'
+ post 'posts/:id/destroy', to:'posts#destroy'
+
 end

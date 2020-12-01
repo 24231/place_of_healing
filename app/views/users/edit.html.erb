@@ -1,0 +1,28 @@
+<% provide(:title, "Edit user" ) %>
+
+<h1>ユーザー編集</h1>
+
+  <div class="form_containar">
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+ 
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+ 
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+      
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+
+        <%= f.submit "編集", class: "btn btn-primary" %>
+      <% end %>
+      
+      <!--プロフィール画像変更のdiv-->
+      
+  </div>
+  
+  <div class="return-top">
+    <%= link_to "トップ画面に戻る", root_url %>
+  </div>

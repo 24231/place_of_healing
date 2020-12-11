@@ -19,7 +19,15 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
-
+  
 production:
   <<: *default
   database: db/production.sqlite3
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: place_of_healing_app_production
+  username: place_of_healing_app
+  password: <%= ENV['PLACE_OF_HEALING_APP_DATABASE_PASSWORD'] %>

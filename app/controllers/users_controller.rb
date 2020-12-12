@@ -8,15 +8,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
   
-<<<<<<< HEAD
-  def create
-    @user = User.new(user_params)
-    if @user.save
-    
-    else
-      render 'new'
-=======
-
   def create
     @user = User.new(user_params)
     if @user.save
@@ -24,7 +15,6 @@ class UsersController < ApplicationController
       redirect_to "/users/#{@user.id}/show"
     else
       render "/users/new"
->>>>>>> master
     end
   end
   
@@ -39,8 +29,6 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
-<<<<<<< HEAD
+
 end
-=======
-end
->>>>>>> master
+

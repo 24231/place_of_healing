@@ -3,8 +3,14 @@
       <%= link_to "place of healing", root_path, id:"log" %>
         <nav class="navbar">
           <ul class="nav navbar-nav  navbar-right">
-            <li><%= link_to "login" , login_path %></li>
-            <li><%= link_to "signup" , signup_path %></li>
+            <% if logged_in? %>
+              <li><%= link_to "Profile",  "#" %></li>
+              <li><%= link_to "My post" , "/users/#{session[:user_id]}/show" %></li>
+              <li><%= link_to "Logout" , logout_path, method: :delete %></li>
+            <% else %>
+              <li><%= link_to "login" , login_path %></li>
+              <li><%= link_to "signup" , signup_path %></li>
+            <% end %>
           </ul>
         </nav>
       </div>

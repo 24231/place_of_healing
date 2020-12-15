@@ -4,7 +4,7 @@
         <nav class="navbar">
           <ul class="nav navbar-nav  navbar-right">
             <% if logged_in? %>
-              <li><%= link_to "Profile",  "#" %></li>
+              <li><%= link_to "Profile",  "/users/#{session[:user_id]}/edit" %></li>
               <li><%= link_to "My post" , "/users/#{session[:user_id]}/show" %></li>
               <li><%= link_to "Logout" , logout_path, method: :delete %></li>
             <% else %>

@@ -1,27 +1,31 @@
 <% provide(:title, "Edit user" ) %>
 
-<h1>ユーザー編集</h1>
+　<h1>ユーザー編集</h1>
 
-  <div class="form_containar">
+      
+    <div class="form_containar">
       <%= form_with(model: @user, url:"/users/#{@user.id}/update",  local: true) do |f| %>
-        <%= f.label :name %>
+      
+        <%= f.label :"ユーザー名" %>
         <%= f.text_field :name %>
  
-        <%= f.label :email %>
+        <%= f.label :"Eメール" %>
         <%= f.email_field :email %>
  
-        <%= f.label :password %>
+        <%= f.label :"パスワード" %>
         <%= f.password_field :password %>
       
-        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.label :"パスワード確認" %>
         <%= f.password_field :password_confirmation %>
 
-        <%= f.submit "編集", class: "btn btn-primary" %>
-      <% end %>
+      <div class="gravatar_edit">
+       <%= gravatar_for @user %>
+       <a href="https://gravatar.com/emails" target="_blank">画像を選択</a>
+      </div>
       
-      <!--プロフィール画像変更のdiv-->
-      
-  </div>
+        <%= f.submit "更新", class: "btn btn-primary" %>
+     <% end %>
+   </div>
   
   <div class="return-top">
     <%= link_to "トップ画面に戻る", root_url %>

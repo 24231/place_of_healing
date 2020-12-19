@@ -31,7 +31,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   margin-top: 0;
-  padding-top: 30px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -184,3 +184,48 @@ aside {
 }
 
 // user-profile editx
+
+// posts
+
+.posts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 40px 0;
+    border-top: 2px solid #e8e8e8;
+  }
+  .user-name{
+    color: black;
+  }
+  .right-container{
+    padding-left: 80px;
+  }
+  .post-place {
+    display: block;
+    margin-left: 60px;
+    color: black;
+  }
+  .post-content {
+    padding: 15px 0;
+    display: block;
+    margin-left: 60px;
+    color: black;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+

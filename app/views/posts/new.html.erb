@@ -5,13 +5,14 @@
 <div class="new-post">
 
   <div class="form_containar">
-      <%= form_with(model: @post, local: true) do |f| %>
-        <%= f.label :place %>
+      <%= form_with(model: @post, url:posts_create_path, local: true) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      
+        <%= f.label :"場所" %>
         <%= f.text_field :place %>
  
        <div class="field">   
-       <!--幅を大きくするためdiv使用-->
-        <%= f.label :Impressions %>
+        <%= f.label :"感想" %>
         <%= f.text_area :content, placeholder: "銭湯についての感想" %>
        </div>
     

@@ -1,0 +1,11 @@
+<li id="post-<%= post.id %>">
+  <div class="left-container">
+    <%= gravatar_for(post.user) %>
+    <span class="user-name"><%= post.user.name %></span>
+  </div>
+  <div class="right-container">
+    <span class="post-place"><%= link_to post.place , 'posts/#{post.id}/show' %></span>
+    <span class="post-content"><%= post.content %></span>
+  </div>
+</li>
+  

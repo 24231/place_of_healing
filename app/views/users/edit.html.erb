@@ -5,6 +5,7 @@
       
     <div class="form_containar">
       <%= form_with(model: @user, url:"/users/#{@user.id}/update",  local: true) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
       
         <%= f.label :"ユーザー名" %>
         <%= f.text_field :name %>

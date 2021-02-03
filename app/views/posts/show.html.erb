@@ -2,4 +2,39 @@
 
 <h1>post詳細</h1>
 
+  <div class = 'show'>
+    
+    <div class="show-place">
+      <span>場所：<%= @post.place %></span> 
+    </div>
+    
+    <div class="show-content">
+      <span>内容：<%= @post.content %></span> 
+    </div>
+    
+    <div class="show-img">
+      <!--写真-->
+    </div>
+    
+    <div class="show-user">
+      <span class="user-name"><%= @post.user.name %>さんの投稿</span>
+    </div>
+    
+    <div class="return-top">
+      <%= link_to "トップ画面に戻る", root_url %>
+    </div>
+    
+   </div>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
 <!--postのパーシャルをrender-->

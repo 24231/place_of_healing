@@ -229,3 +229,29 @@ span.image {
   }
 }
 
+
+// post 詳細
+
+.show {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.show-place {
+  margin-top: 10px;
+}
+
+.show-content {
+    margin-top: 20px;
+    padding: 40px 5px;
+    background-color: #F8F9FA;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.show-user {
+   margin: 40px auto;
+}
+

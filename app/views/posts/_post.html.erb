@@ -6,6 +6,8 @@
   <div class="right-container">
     <span class="post-place"><%= link_to post.place , 'posts/#{post.id}/show' %></span>
     <span class="post-content"><%= post.content %></span>
+    <% if current_user?(post.user) %>
+    　<!--削除リンク-->
+    <% end %>
   </div>
 </li>
-  

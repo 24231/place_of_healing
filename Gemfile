@@ -2,6 +2,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+	
+gem 'faker'
 gem 'rails',      '6.0.3'
 gem 'will_paginate',           '3.1.8'
 gem 'bootstrap-will_paginate', '1.0.0'

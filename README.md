@@ -1,24 +1,20 @@
-# README
+# 「Place of healing」の概要
+自分のお気に入りの銭湯を共有できるサービスです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+銭湯は、飲食に比べネット上の情報が少なく、自分に合った近くの銭湯を探すためには実際に行かなくてはいけなかったという実体験がありました。
+そこで、なるべく早く自分に合った銭湯を見つけれるように、実際に行った他の人たちのレビューや感想があれば良いのでは？という考えのもと成作しました。
 
-Things you may want to cover:
+# 「Place of healing」の機能一覧
+・ユーザー登録機能
+・ユーザー認証機能
+・ユーザー編集機能
+・記事一覧表示機能
+・記事詳細表示機能
+・記事投稿機能
+・DBテーブルのリレーション機能
+・DBトランザクションの制御機能
+・ページネーション機能
+・画像アップロード機能
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

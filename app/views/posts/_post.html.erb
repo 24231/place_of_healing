@@ -5,7 +5,10 @@
   </div>
   <div class="right-container">
     <span class="post-place"><%= link_to post.place , 'posts/#{post.id}/show' %></span>
-    <span class="post-content"><%= post.content %></span>
+    <span class="post-content">
+      <%= post.content %>
+      <%= image_tag post.display_image if post.image.attached? %>
+    </span>
     <% if current_user?(post.user) %>
     　<!--削除リンク-->
     <% end %>

@@ -15,6 +15,10 @@
         <%= f.label :"感想" %>
         <%= f.text_area :content, placeholder: "銭湯についての感想" %>
        </div>
+
+       <span class="image">
+         <%= f.file_field :image %>
+       </span>
     
         <%= f.submit "投稿", class: "btn btn-primary" %>
         

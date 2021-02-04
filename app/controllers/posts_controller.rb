@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   
   def create
     @post = current_user.posts.build(post_params)
+    @post.image.attach(params[:post][:image])
     if @post.save
       flash[:success] = "投稿されました"
       redirect_to root_url
@@ -30,7 +31,7 @@ class PostsController < ApplicationController
   private
   
     def post_params
-      params.require(:post).permit(:place, :content)
+      params.require(:post).permit(:place, :content, :image)
     end
     
     def correct_user

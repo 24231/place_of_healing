@@ -1,32 +1,33 @@
 <% provide(:title, 'Post new') %>
 
-<h1>新規投稿</h1>
+  <div class="form">
+    
+    <div class="top">
+       <h1>新規投稿</h1>
+    </div>
 
-<div class="new-post">
-
-  <div class="form_containar">
-      <%= form_with(model: @post, url:posts_create_path, local: true) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
+     <div class="form_containar">
+        <%= form_with(model: @post, url:posts_create_path, local: true) do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
       
         <%= f.label :"場所" %>
         <%= f.text_field :place %>
  
        <div class="field">   
         <%= f.label :"感想" %>
-        <%= f.text_area :content, placeholder: "銭湯についての感想" %>
+        <%= f.text_area :content %>
        </div>
 
        <span class="image">
          <%= f.file_field :image %>
        </span>
     
-        <%= f.submit "投稿", class: "btn btn-primary" %>
-        
+        <%= f.submit "投稿", class: "new-post-btn btn-primary" %>
       <% end %>
-  </div>
   
-  <div class="return-top">
-    <%= link_to "トップ画面に戻る", root_url %>
+      <div class="return-top">
+        <%= link_to "トップ画面に戻る", root_url %>
+      </div>
+    </div>
   </div>
-</div>
   

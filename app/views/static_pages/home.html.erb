@@ -3,17 +3,17 @@
    <div class="main-container">
      <h1>おすすめの銭湯・温泉をシェアしよう</h1>
      
-     <%= link_to "Post", "posts/new", class: "btn btn-lg btn-primary" %>
+     <%= link_to "投稿", "posts/new", class: "btn" %>
    </div>
      <div>
-      <h1>POST</h1>
+      <h1>投稿一覧</h1>
       <%= render 'shared/feed' %>
      </div>
    <% else %>
    <div class="main-container">
       <h1>あなたに合った癒しの場を見つけよう</h1>
 
-      <%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %>
+      <%= link_to "ログイン", login_path, class: "btn" %>
      <% end %>
    </div>
   

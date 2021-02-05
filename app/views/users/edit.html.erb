@@ -1,7 +1,10 @@
 <% provide(:title, "Edit user" ) %>
 
-　<h1>ユーザー編集</h1>
-
+  <div class="form">
+    
+    <div class="top">
+    　<h1>ユーザー編集</h1>
+    </div>
       
     <div class="form_containar">
       <%= form_with(model: @user, url:"/users/#{@user.id}/update",  local: true) do |f| %>
@@ -24,10 +27,11 @@
        <a href="https://gravatar.com/emails" target="_blank">画像を選択</a>
       </div>
       
-        <%= f.submit "更新", class: "btn btn-primary" %>
+        <%= f.submit "更新", class: "user-edit-btn btn-primary" %>
      <% end %>
    </div>
   
-  <div class="return-top">
-    <%= link_to "トップ画面に戻る", root_url %>
+    <div class="return-top">
+      <%= link_to "トップ画面に戻る", root_url %>
+    </div>
   </div>

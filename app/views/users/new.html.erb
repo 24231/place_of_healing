@@ -2,29 +2,29 @@
 
 <% provide(:title, 'Sign up') %>
 
-<div class="new">
+<div class="form">
   
-  <div class="post_top">
-    <h1>Sign up</h1>
+  <div class="top">
+    <h1>新規登録</h1>
   </div>
 
   <div class="form_containar">
       <%= form_with(model: @user, url:users_create_path, local: true) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
       
-        <%= f.label :name %>
+        <%= f.label :"ユーザー名"%>
         <%= f.text_field :name %>
  
-        <%= f.label :email %>
+        <%= f.label :"E-mail" %>
         <%= f.email_field :email %>
  
-        <%= f.label :password %>
+        <%= f.label :"パスワード" %>
         <%= f.password_field :password %>
       
-        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.label :password_confirmation, "確認" %>
         <%= f.password_field :password_confirmation %>
 
-        <%= f.submit "Register", class: "btn btn-primary" %>
+        <%= f.submit "登録", class: "sign-up-btn btn-primary" %>
         
       <% end %>
   </div>

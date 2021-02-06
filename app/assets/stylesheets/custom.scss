@@ -5,6 +5,7 @@
 
 body {
   padding-top: 100px;
+  margin: 0px;
 }
 
 section {
@@ -13,6 +14,12 @@ section {
 
 textarea {
   resize: vertical;
+}
+
+.container {
+  // padding-right: 0px;
+  // padding-left: 0px;
+  // margin: 0;
 }
 
 /* typography */
@@ -45,12 +52,6 @@ p {
 
 // header
 
-.container {
-  // padding-right: 0px;
-  // padding-left: 0px;
-  // margin: 0;
-}
-
 header {
   padding: 20px 16px;
   vertical-align: center;
@@ -58,16 +59,17 @@ header {
 }
 
 header.navbar{
-  margin: 0;
+  padding-bottom: 10px;
+  margin: 0px;
 }
 
 #log {
-  float: left;
   font-family: fantasy;
   font-size: 30px;
   color: white;
   padding-top: 9px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 
@@ -79,7 +81,7 @@ li {
 // home 
 
 .main-container {
-  margin: 0;
+  margin: 0px;
   padding: 150px;
   background-image: image-url('home_1.png');
   height:  722px;
@@ -194,9 +196,9 @@ aside {
   border-radius: 50%;
 }
 
-// user-profile editx
+// user-profile edit
 
-// posts
+// ポストパーシャル
 
 .posts {
   list-style: none;
@@ -208,9 +210,15 @@ aside {
   .user-name{
     color: black;
   }
+  
+  .left-container{
+    flex-flow: column;
+  }
+  
   .right-container{
     padding-left: 80px;
   }
+  
   .post-place {
     display: block;
     margin-left: 60px;
@@ -243,9 +251,9 @@ span.image {
 
 // post 詳細
 
-.show {
+.post-show {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 20px;
     border: 1px solid gray;
 }
@@ -256,7 +264,7 @@ span.image {
 
 .show-content {
     margin-top: 20px;
-    padding: 40px 5px;
+    padding: 10px 5px 40px 10px;
     background-color: #F8F9FA;
     border: 1px solid gray;
     border-radius: 10px;
@@ -266,3 +274,24 @@ span.image {
    margin: 40px auto;
 }
 
+
+// マイポスト
+
+.mypost {
+  margin-top: 50px;
+}
+
+.mypost-top{
+  margin-bottom: 40px;
+}
+
+// ホーム
+
+.post-top{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.alert {
+  margin-bottom: 0px;
+}

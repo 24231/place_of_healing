@@ -1,29 +1,32 @@
 <% provide(:title, 'Post detail') %>
 
-  <h1>投稿詳細</h1>
-    <div class = 'show'>
-    
-    <div class="show-place">
-      <span>場所：<%= @post.place %></span> 
+    <div class="post-top">
+      <h1>投稿詳細</h1>
     </div>
+  
+    <div class = 'post-show'>
     
-    <div class="show-content">
-      <span>内容：<%= @post.content %></span> 
-    </div>
+      <div class="show-place">
+        <span><%= @post.place %></span> 
+      </div>
     
-    <div class="show-img">
-      <!--写真-->
-    </div>
+      <div class="show-content">
+        <span><%= @post.content %></span> 
+      </div>
     
-    <div class="show-user">
-      <span class="user-name"><%= @post.user.name %>さんの投稿</span>
-    </div>
+      <div class="show-img">
+        <!--写真-->
+      </div>
     
-    <div class="return-top">
-      <%= link_to "トップ画面に戻る", root_url %>
-    </div>
+      <div class="show-user">
+        <span class="user-name"><%= @post.user.name %>さんの投稿</span>
+      </div>
     
-   </div>
+      <div class="return-top">
+        <%= link_to "トップ画面に戻る", root_url %>
+      </div>
+      
+     </div>
   
     
     

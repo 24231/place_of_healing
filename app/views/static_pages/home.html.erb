@@ -5,11 +5,15 @@
      
      <%= link_to "投稿", "posts/new", class: "btn" %>
    </div>
-     <div>
-      <h1>投稿一覧</h1>
-      <%= render 'shared/feed' %>
-     </div>
-   <% else %>
+   <div class="row">
+     <div class="col-md-10 col-md-offset-2">
+       <div class="home-post">
+           <h1 class="post-top">投稿一覧</h1>
+        <%= render 'shared/feed' %>
+       </div>
+      </div>
+   </div>
+     <% else %>
    <div class="main-container">
       <h1>あなたに合った癒しの場を見つけよう</h1>
 

@@ -17,8 +17,6 @@ textarea {
 }
 
 .container {
-  // padding-right: 0px;
-  // padding-left: 0px;
   // margin: 0;
 }
 
@@ -47,7 +45,6 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-  text-align: center;
 }
 
 // header
@@ -85,7 +82,7 @@ li {
   padding: 150px;
   background-image: image-url('home_1.png');
   height:  722px;
-  width:   1440px;
+  width:   100vw;
   background-size:cover;
 }
 
@@ -107,12 +104,21 @@ li {
   opacity: 0.9;
 }
 
+.post-top{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.alert {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 // footer
 
 .footer {
   margin-top: 40px;
   padding: 20px;
-  background-color: white;
   color: black;
   text-align: center;
 }
@@ -171,9 +177,6 @@ input, textarea {
 }
 
 
-/* error_forms */
-
-
 // user-profile
 
 aside {
@@ -196,7 +199,6 @@ aside {
   border-radius: 50%;
 }
 
-// user-profile edit
 
 // ポストパーシャル
 
@@ -207,27 +209,23 @@ aside {
     padding: 40px 0;
     border-top: 2px solid #e8e8e8;
   }
+  
   .user-name{
     color: black;
   }
   
-  .left-container{
-    flex-flow: column;
-  }
-  
   .right-container{
     padding-left: 80px;
+    margin-left: 60px;
   }
   
   .post-place {
     display: block;
-    margin-left: 60px;
     color: black;
   }
   .post-content {
     padding: 15px 0;
     display: block;
-    margin-left: 60px;
     color: black;
     img {
       display: block;
@@ -248,8 +246,14 @@ span.image {
   }
 }
 
+// マイポスト
 
-// post 詳細
+.mypost-top{
+  margin: 30px auto;
+}
+
+
+// ポスト 詳細
 
 .post-show {
     max-width: 600px;
@@ -264,34 +268,25 @@ span.image {
 
 .show-content {
     margin-top: 20px;
-    padding: 10px 5px 40px 10px;
+    padding: 10px 5px 10px 10px;
     background-color: #F8F9FA;
     border: 1px solid gray;
     border-radius: 10px;
+}
+
+.show-img{
+  margin-top: 20px;
+  text-align : center
 }
 
 .show-user {
    margin: 40px auto;
 }
 
-
-// マイポスト
-
-.mypost {
-  margin-top: 50px;
+.flex {
+    display: flex;
 }
 
-.mypost-top{
-  margin-bottom: 40px;
-}
-
-// ホーム
-
-.post-top{
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.alert {
-  margin-bottom: 0px;
+.flex-right {
+  justify-content: flex-end;
 }

@@ -11,32 +11,26 @@
       </div>
     
       <div class="show-content">
-        <span><%= @post.content %></span> 
+        <span><%= simple_format(@post.content) %></span> 
       </div>
     
       <div class="show-img">
-        <!--写真-->
+        <%= image_tag @post.display_image if @post.image.attached? %>
       </div>
     
       <div class="show-user">
         <span class="user-name"><%= @post.user.name %>さんの投稿</span>
       </div>
+      
+      
+      <div class="flex flex-right">
+         <% if current_user?(@post.user) %>
+         <%= link_to "削除",  "/posts/#{ @post.id }/destroy", method: :delete,
+                                            data: { confirm: "本当にこの投稿を削除しますか?" } %>
+        <% end %>
+      </div>
     
       <div class="return-top">
         <%= link_to "トップ画面に戻る", root_url %>
       </div>
-      
      </div>
-  
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-<!--postのパーシャルをrender-->
